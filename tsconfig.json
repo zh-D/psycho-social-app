@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true, //表明支持import语法
+    "jsx": "react", //表明要使用react
+    "sourceMap": true
+  }
+}
