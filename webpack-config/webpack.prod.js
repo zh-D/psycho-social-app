@@ -14,7 +14,7 @@ module.exports = merge(webpackCommonConf, {
   //   mainFields: ["jsnext:main", "browser", "main"],
   // },
   output: {
-    filename: "bundle.[contentHash:8].js", // 打包代码时，加上 hash 戳
+    filename: "[contenthash:8].bundle.js", // 打包代码时，加上 hash 戳
     path: distPath,
   },
   module: {
