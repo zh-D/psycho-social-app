@@ -10,6 +10,7 @@ import banner06 from "../../../public/imgs/banner06.jpg";
 const SwipeWrapper = styled.ul`
   position: relative;
   width: 100%;
+  min-width: 1280px;
   height: 650px;
   background-color: #eee;
   overflow: hidden;
@@ -188,14 +189,31 @@ const SwipeWrapper = styled.ul`
 
 function Swipe() {
   const [radioValue, setRadioValue] = useState("1");
+  const [interval, InitInterval] = useState(null);
+
   useEffect(() => {
-    const interval = setInterval(() => {
-      setRadioValue((radioValue) => {
-        return radioValue === "6" ? "1" : String(Number(radioValue) + 1);
-      });
-    }, 3000);
+    InitInterval(
+      setInterval(() => {
+        setRadioValue((radioValue) => {
+          return radioValue === "6" ? "1" : String(Number(radioValue) + 1);
+        });
+      }, 3000)
+    );
     return () => clearInterval(interval);
   }, []);
+
+  const onRadioChange = (e) => {
+    setRadioValue(e.target.value);
+    clearInterval(interval);
+    InitInterval(
+      setInterval(() => {
+        setRadioValue((radioValue) => {
+          return radioValue === "6" ? "1" : String(Number(radioValue) + 1);
+        });
+      }, 3000)
+    );
+  };
+
   return (
     <SwipeWrapper>
       <input
@@ -205,7 +223,7 @@ function Swipe() {
         value="1"
         checked={radioValue === "1"}
         onChange={(e) => {
-          setRadioValue(e.target.value);
+          onRadioChange(e);
         }}
       />
       <input
@@ -215,7 +233,7 @@ function Swipe() {
         value="2"
         checked={radioValue === "2"}
         onChange={(e) => {
-          setRadioValue(e.target.value);
+          onRadioChange(e);
         }}
       />
       <input
@@ -225,7 +243,7 @@ function Swipe() {
         value="3"
         checked={radioValue === "3"}
         onChange={(e) => {
-          setRadioValue(e.target.value);
+          onRadioChange(e);
         }}
       />
       <input
@@ -235,7 +253,7 @@ function Swipe() {
         value="4"
         checked={radioValue === "4"}
         onChange={(e) => {
-          setRadioValue(e.target.value);
+          onRadioChange(e);
         }}
       />
       <input
@@ -245,7 +263,7 @@ function Swipe() {
         value="5"
         checked={radioValue === "5"}
         onChange={(e) => {
-          setRadioValue(e.target.value);
+          onRadioChange(e);
         }}
       />
       <input
@@ -255,7 +273,7 @@ function Swipe() {
         value="6"
         checked={radioValue === "6"}
         onChange={(e) => {
-          setRadioValue(e.target.value);
+          onRadioChange(e);
         }}
       />
       <div className="navigator slide-1">
