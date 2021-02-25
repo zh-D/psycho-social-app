@@ -5,7 +5,7 @@ const { distPath } = require("./paths");
 module.exports = {
   mode: "development",
   entry: {
-    react: ["react", "react-dom"],
+    react: ["react", "react-dom", "react-router-dom"],
   },
   output: {
     filename: "[name].dll.js",

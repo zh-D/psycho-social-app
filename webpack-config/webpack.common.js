@@ -5,6 +5,9 @@ const { srcPath, publicPath } = require("./paths");
 
 module.exports = {
   entry: path.join(srcPath, "index.tsx"),
+  resolve: {
+    extensions: [".webpack.js", ".web.js", ".ts", ".tsx", ".js"],
+  },
   module: {
     rules: [
       { test: /\.tsx?$/, loader: "ts-loader", exclude: /node_modules/ },
