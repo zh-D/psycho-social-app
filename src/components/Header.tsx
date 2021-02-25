@@ -10,6 +10,7 @@ const HeaderWrapper = styled.header`
   width: 1216px;
   height: 65px;
   top: 58px;
+  z-index: 10000;
   .header-logo-box {
     float: left;
     width: 160px;
@@ -60,44 +61,42 @@ const HeaderWrapper = styled.header`
 
 function Header() {
   return (
-    <div style={{ position: "relative", height: "604.42px" }}>
-      <HeaderWrapper>
-        <div className="header-logo-box">
-          <img src={Logo} />
-        </div>
-        <nav className="nav-box">
-          <ul className="nav-list">
-            <li className="nav-item">
-              <Link to="/">首页</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/brand">品牌</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/pour-out">倾诉</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/listener">倾听者</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/serve">服务</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/articles">文章</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/help">求助广场</Link>
-            </li>
-            <li>
-              <button className="nav-item-btn">加入倾听者</button>
-            </li>
-            <li>
-              <span>登录</span>|<span>注册</span>
-            </li>
-          </ul>
-        </nav>
-      </HeaderWrapper>
-    </div>
+    <HeaderWrapper>
+      <div className="header-logo-box">
+        <img src={Logo} />
+      </div>
+      <nav className="nav-box">
+        <ul className="nav-list">
+          <li className="nav-item">
+            <Link to="/">首页</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/brand">品牌</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/pour-out">倾诉</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/listener">倾听者</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/serve">服务</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/articles">文章</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/help">求助广场</Link>
+          </li>
+          <li>
+            <button className="nav-item-btn">加入倾听者</button>
+          </li>
+          <li>
+            <span>登录</span>|<span>注册</span>
+          </li>
+        </ul>
+      </nav>
+    </HeaderWrapper>
   );
 }
 
