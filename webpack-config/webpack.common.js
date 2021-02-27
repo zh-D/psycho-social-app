@@ -37,7 +37,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "webpack is funny",
+      title: "松果倾诉",
       template: path.join(publicPath, "index.html"),
       filename: "index.html",
     }),
