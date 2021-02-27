@@ -1,10 +1,4 @@
 import styled from "styled-components";
-import banner01 from "../../../public/imgs/banner01.jpg";
-import banner02 from "../../../public/imgs/banner02.jpg";
-import banner03 from "../../../public/imgs/banner03.jpg";
-import banner04 from "../../../public/imgs/banner04.jpg";
-import banner05 from "../../../public/imgs/banner05.jpg";
-import banner06 from "../../../public/imgs/banner06.jpg";
 
 const SwipeWrapper = styled.ul`
   position: relative;
@@ -29,42 +23,6 @@ const SwipeWrapper = styled.ul`
     height: inherit;
 
     transition: 0.5s transform ease-in-out;
-  }
-
-  .slide:nth-of-type(1) {
-    // background: url(${banner01});
-    // background-size: 100% 100%;
-    // background-repeat: no-repeat;
-  }
-  .slide:nth-of-type(2) {
-    left: 100%;
-    // background: url(${banner02});
-    // background-size: 100% 100%;
-    // background-repeat: no-repeat;
-  }
-  .slide:nth-of-type(3) {
-    left: 200%;
-    // background: url(${banner03});
-    // background-size: 100% 100%;
-    // background-repeat: no-repeat;
-  }
-  .slide:nth-of-type(4) {
-    left: 300%;
-    // background: url(${banner04});
-    // background-size: 100% 100%;
-    // background-repeat: no-repeat;
-  }
-  .slide:nth-of-type(5) {
-    left: 400%;
-    // background: url(${banner05});
-    // background-size: 100% 100%;
-    // background-repeat: no-repeat;
-  }
-  .slide:nth-of-type(6) {
-    left: 500%;
-    // background: url(${banner06});
-    // background-size: 100% 100%;
-    // background-repeat: no-repeat;
   }
 
   .controls-visible {

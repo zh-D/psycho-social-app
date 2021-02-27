@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Layout from "../Layout";
 import Swipe from "../components/Swipe";
 import Advantages from "../components/Advantages";
 import Main from "../components/Main";

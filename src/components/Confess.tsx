@@ -8,7 +8,6 @@ import Confess3JPG from "../../public/imgs/confess-3.jpg";
 import Confess4JPG from "../../public/imgs/confess-4.jpg";
 import Confess5JPG from "../../public/imgs/confess-5.jpg";
 import Confess6JPG from "../../public/imgs/confess-6.jpg";
-import LoadingPNG from "../../public/imgs/loading.jpg";
 
 const ConfessWrapper = styled.div`
   .mood-imgs {

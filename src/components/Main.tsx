@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
 import MainPNG from "../../public/imgs/bg-main.jpg";
-import LoadingJPG from "../../public/imgs/loading.jpg";
 
 const MainWrapper = styled.section`
   .container {

@@ -1,11 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import CommonFactory from "./common/CompFactory";
-
 import GlobalPNG from "../../public/imgs/icon-global.png";
 import LogoPNG from "../../public/imgs/mood-logo.png";
 import C2CPNG from "../../public/imgs/icon-c2c.png";
-import LaoindJPG from "../../public/imgs/loading.jpg";
 
 const ServiceWrapper = styled.div`
   .service-icons {

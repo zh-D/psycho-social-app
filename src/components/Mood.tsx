@@ -9,8 +9,6 @@ import Mood4JPG from "../../public/imgs/mood-4.jpg";
 import Mood5JPG from "../../public/imgs/mood-5.jpg";
 import Mood6JPG from "../../public/imgs/mood-6.jpg";
 
-import LoadingPNG from "../../public/imgs/Loading.jpg";
-
 const Moodwrapper = styled.div`
   .mood-imgs {
     display: grid;
