@@ -38,6 +38,11 @@ const HeaderWrapper = styled.header`
     text-align: center;
     cursor: pointer;
   }
+
+  .active {
+    border-bottom: 2px solid #2abbb4;
+  }
+
   .nav-item-btn {
     width: 150px;
     height: 46px;
@@ -60,14 +65,33 @@ const HeaderWrapper = styled.header`
 `;
 
 function Header() {
+  const onUlClick = (e) => {
+    e.stopPropagation();
+    let lis = e.currentTarget.children;
+    for (let key in lis) {
+      if (lis[key].className === "nav-item active") {
+        lis[key].className = "nav-item";
+        break;
+      }
+    }
+    if (e.target.nodeName === "A") {
+      let ele = e.target.parentNode;
+      ele.className = "nav-item active";
+    }
+
+    if (e.target.nodeName === "LI") {
+      e.target.className === "nav-item active";
+    }
+  };
+
   return (
     <HeaderWrapper>
       <div className="header-logo-box">
         <img src={Logo} />
       </div>
       <nav className="nav-box">
-        <ul className="nav-list">
-          <li className="nav-item">
+        <ul className="nav-list" onClick={(e) => onUlClick(e)}>
+          <li className="nav-item active">
             <Link to="/">首页</Link>
           </li>
           <li className="nav-item">
