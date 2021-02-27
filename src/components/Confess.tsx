@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import CommonFactory from "./common/CompFactory";
 
@@ -8,6 +8,7 @@ import Confess3JPG from "../../public/imgs/confess-3.jpg";
 import Confess4JPG from "../../public/imgs/confess-4.jpg";
 import Confess5JPG from "../../public/imgs/confess-5.jpg";
 import Confess6JPG from "../../public/imgs/confess-6.jpg";
+import LoadingPNG from "../../public/imgs/loading.jpg";
 
 const ConfessWrapper = styled.div`
   .mood-imgs {
@@ -120,7 +121,12 @@ function Mood() {
                 <div className="mood-imgs-item" key={child.title}>
                   <div className="content-box">
                     <div className="img-box">
-                      <img src={child.imgSrc} alt="" />
+                      <img
+                        src=""
+                        data-src={child.imgSrc}
+                        alt=""
+                        className="lazy-image"
+                      />
                     </div>
                     <div className="text-box">
                       <p className="text-title">{child.title}</p>

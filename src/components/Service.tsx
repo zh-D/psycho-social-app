@@ -5,6 +5,7 @@ import CommonFactory from "./common/CompFactory";
 import GlobalPNG from "../../public/imgs/icon-global.png";
 import LogoPNG from "../../public/imgs/mood-logo.png";
 import C2CPNG from "../../public/imgs/icon-c2c.png";
+import LaoindJPG from "../../public/imgs/loading.jpg";
 
 const ServiceWrapper = styled.div`
   .service-icons {
@@ -56,18 +57,33 @@ function Service() {
         <ServiceWrapper>
           <div className="service-icons">
             <div className="service-icons-item">
-              <img src={GlobalPNG} alt="" />
+              <img
+                src=""
+                data-src={GlobalPNG}
+                alt="这是一张图片"
+                className="lazy-image"
+              />
               <p>服务超过86个国家</p>
             </div>
             <div className="service-icons-item">
               <div className="relative service-icons-item-relative">
-                <img src={LogoPNG} alt="" />
+                <img
+                  src=""
+                  data-src={LogoPNG}
+                  alt="这是一张图片"
+                  className="lazy-image"
+                />
                 <p>松果倾诉APP</p>
               </div>
             </div>
             <div className="service-icons-item">
               <div className="relative service-icons-item-relative">
-                <img src={C2CPNG} alt="" />
+                <img
+                  src=""
+                  data-src={C2CPNG}
+                  alt="这是一张图片"
+                  className="lazy-image"
+                />
                 <p>C2C付费咨询</p>
               </div>
             </div>

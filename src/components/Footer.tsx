@@ -64,14 +64,19 @@ function Footer() {
   return (
     <FooterWrapper>
       <div className="footer-logo">
-        <img src={Logo} alt="" />
+        <img src="" data-src={Logo} alt="这是一张图片" className="lazy-image" />
       </div>
 
       <div className="footer-content">
         <div className="footer-item">
           <p>工作时间：早上8:00-凌晨2:00</p>
           <p className="footer-content-phone">
-            <img src={Phone} />
+            <img
+              src=""
+              data-src={Phone}
+              alt="这是一张图片"
+              className="lazy-image"
+            />
             <span>400-633-6659</span>
           </p>
           <p className="footer-content-item-copyright">
@@ -88,11 +93,21 @@ function Footer() {
           </p>
         </div>
         <div className="footer-item text-center">
-          <img src={Wechat} />
+          <img
+            src=""
+            data-src={Wechat}
+            alt="这是一张图片"
+            className="lazy-image"
+          />
           <p className="footer-content-item-desc">扫码关注微信公众号</p>
         </div>
         <div className="footer-item text-center">
-          <img src={Download} />
+          <img
+            src=""
+            data-src={Download}
+            alt="这是一张图片"
+            className="lazy-image"
+          />
           <p className="footer-content-item-desc">扫码下载松果倾诉APP</p>
         </div>
       </div>

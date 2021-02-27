@@ -32,39 +32,39 @@ const SwipeWrapper = styled.ul`
   }
 
   .slide:nth-of-type(1) {
-    background: url(${banner01});
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    // background: url(${banner01});
+    // background-size: 100% 100%;
+    // background-repeat: no-repeat;
   }
   .slide:nth-of-type(2) {
     left: 100%;
-    background: url(${banner02});
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    // background: url(${banner02});
+    // background-size: 100% 100%;
+    // background-repeat: no-repeat;
   }
   .slide:nth-of-type(3) {
     left: 200%;
-    background: url(${banner03});
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    // background: url(${banner03});
+    // background-size: 100% 100%;
+    // background-repeat: no-repeat;
   }
   .slide:nth-of-type(4) {
     left: 300%;
-    background: url(${banner04});
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    // background: url(${banner04});
+    // background-size: 100% 100%;
+    // background-repeat: no-repeat;
   }
   .slide:nth-of-type(5) {
     left: 400%;
-    background: url(${banner05});
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    // background: url(${banner05});
+    // background-size: 100% 100%;
+    // background-repeat: no-repeat;
   }
   .slide:nth-of-type(6) {
     left: 500%;
-    background: url(${banner06});
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    // background: url(${banner06});
+    // background-size: 100% 100%;
+    // background-repeat: no-repeat;
   }
 
   .controls-visible {

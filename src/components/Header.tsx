@@ -87,7 +87,7 @@ function Header() {
   return (
     <HeaderWrapper>
       <div className="header-logo-box">
-        <img src={Logo} />
+        <img src="" data-src={Logo} alt="这是一张图片" className="lazy-image" />
       </div>
       <nav className="nav-box">
         <ul className="nav-list" onClick={(e) => onUlClick(e)}>
