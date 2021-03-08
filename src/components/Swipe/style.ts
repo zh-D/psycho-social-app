@@ -24,6 +24,26 @@ const SwipeWrapper = styled.ul`
 
     transition: 0.5s transform ease-in-out;
   }
+  
+  .slide:nth-of-type(2) {
+    left: 100%;
+  }
+  
+  .slide:nth-of-type(3) {
+    left: 200%;
+  }
+  .slide:nth-of-type(4) {
+    left: 300%;
+  }
+  
+  .slide:nth-of-type(5) {
+    left: 400%;
+  }
+  
+  .slide:nth-of-type(6) {
+    left: 500%;
+  }
+
 
   .controls-visible {
     position: absolute;
