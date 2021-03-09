@@ -1,9 +1,10 @@
 const path = require("path");
 const webpackCommonConf = require("./webpack.common.js");
 const { merge } = require("webpack-merge");
-const { distPath } = require("./paths");
+const { distPath, publicPath } = require("./paths");
 var FriendlyErrorsWebpackPlugin = require("friendly-errors-webpack-plugin");
 const DllReferencePlugin = require("webpack/lib/DllReferencePlugin");
+
 
 module.exports = merge(webpackCommonConf, {
   devtool: "inline-source-map",
@@ -29,7 +30,8 @@ module.exports = merge(webpackCommonConf, {
   plugins: [
     new FriendlyErrorsWebpackPlugin(),
     new DllReferencePlugin({
-      manifest: require(path.join(distPath, "react.manifest.json")),
+      context: __dirname,
+      manifest: require(path.join(publicPath, "react.manifest.json")),
     }),
   ],
 });

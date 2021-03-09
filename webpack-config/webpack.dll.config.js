@@ -1,6 +1,6 @@
 const path = require("path");
 const DllPlugin = require("webpack/lib/DllPlugin");
-const { distPath } = require("./paths");
+const { publicPath } = require("./paths");
 
 module.exports = {
   mode: "development",
@@ -9,13 +9,13 @@ module.exports = {
   },
   output: {
     filename: "[name].dll.js",
-    path: distPath,
+    path: publicPath,
     library: "_dll_[name]",
   },
   plugins: [
     new DllPlugin({
       name: "_dll_[name]",
-      path: path.join(distPath, "[name].manifest.json"),
+      path: path.join(publicPath, "[name].manifest.json"),
     }),
   ],
 };
